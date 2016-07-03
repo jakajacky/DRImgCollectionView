@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F20848C91D28F04200C6C299 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20848C21D28F04200C6C299 /* TAAbstractDotView.m */; };
+		F20848CA1D28F04200C6C299 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20848C41D28F04200C6C299 /* TAAnimatedDotView.m */; };
+		F20848CB1D28F04200C6C299 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20848C61D28F04200C6C299 /* TADotView.m */; };
+		F20848CC1D28F04200C6C299 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F20848C81D28F04200C6C299 /* TAPageControl.m */; };
+		F20848D11D291A3300C6C299 /* currentDotImg.png in Resources */ = {isa = PBXBuildFile; fileRef = F20848CF1D291A3300C6C299 /* currentDotImg.png */; };
+		F20848D21D291A3300C6C299 /* normalDotImg.png in Resources */ = {isa = PBXBuildFile; fileRef = F20848D01D291A3300C6C299 /* normalDotImg.png */; };
 		F271DACC1D2259790095737D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F271DACB1D2259790095737D /* main.m */; };
 		F271DACF1D2259790095737D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F271DACE1D2259790095737D /* AppDelegate.m */; };
 		F271DAD21D2259790095737D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F271DAD11D2259790095737D /* ViewController.m */; };
@@ -15,6 +21,14 @@
 		F271DADA1D22597A0095737D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F271DAD81D22597A0095737D /* LaunchScreen.storyboard */; };
 		F271DAE51D22597A0095737D /* DRImgCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F271DAE41D22597A0095737D /* DRImgCollectionViewTests.m */; };
 		F271DAF01D22597A0095737D /* DRImgCollectionViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F271DAEF1D22597A0095737D /* DRImgCollectionViewUITests.m */; };
+		F271DB031D2267010095737D /* DRImgCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F271DB021D2267010095737D /* DRImgCollectionView.m */; };
+		F271DB081D2267B00095737D /* image0.png in Resources */ = {isa = PBXBuildFile; fileRef = F271DB041D2267B00095737D /* image0.png */; };
+		F271DB091D2267B00095737D /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = F271DB051D2267B00095737D /* image1.png */; };
+		F271DB0A1D2267B00095737D /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = F271DB061D2267B00095737D /* image2.png */; };
+		F271DB0B1D2267B00095737D /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = F271DB071D2267B00095737D /* image3.png */; };
+		F271DB0F1D2284F70095737D /* DRImgCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F271DB0D1D2284F70095737D /* DRImgCollectionViewCell.m */; };
+		F271DB101D2284F70095737D /* DRImgCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F271DB0E1D2284F70095737D /* DRImgCollectionViewCell.xib */; };
+		F271DB131D23A69D0095737D /* NSTimer+operation.m in Sources */ = {isa = PBXBuildFile; fileRef = F271DB121D23A69D0095737D /* NSTimer+operation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +49,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F20848C11D28F04200C6C299 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		F20848C21D28F04200C6C299 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		F20848C31D28F04200C6C299 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		F20848C41D28F04200C6C299 /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		F20848C51D28F04200C6C299 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		F20848C61D28F04200C6C299 /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		F20848C71D28F04200C6C299 /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		F20848C81D28F04200C6C299 /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		F20848CF1D291A3300C6C299 /* currentDotImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = currentDotImg.png; sourceTree = "<group>"; };
+		F20848D01D291A3300C6C299 /* normalDotImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normalDotImg.png; sourceTree = "<group>"; };
 		F271DAC71D2259790095737D /* DRImgCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DRImgCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F271DACB1D2259790095737D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F271DACD1D2259790095737D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +75,17 @@
 		F271DAEB1D22597A0095737D /* DRImgCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DRImgCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F271DAEF1D22597A0095737D /* DRImgCollectionViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRImgCollectionViewUITests.m; sourceTree = "<group>"; };
 		F271DAF11D22597A0095737D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F271DB011D2267010095737D /* DRImgCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRImgCollectionView.h; sourceTree = "<group>"; };
+		F271DB021D2267010095737D /* DRImgCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRImgCollectionView.m; sourceTree = "<group>"; };
+		F271DB041D2267B00095737D /* image0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image0.png; sourceTree = "<group>"; };
+		F271DB051D2267B00095737D /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
+		F271DB061D2267B00095737D /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
+		F271DB071D2267B00095737D /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
+		F271DB0C1D2284F70095737D /* DRImgCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRImgCollectionViewCell.h; sourceTree = "<group>"; };
+		F271DB0D1D2284F70095737D /* DRImgCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRImgCollectionViewCell.m; sourceTree = "<group>"; };
+		F271DB0E1D2284F70095737D /* DRImgCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DRImgCollectionViewCell.xib; sourceTree = "<group>"; };
+		F271DB111D23A69D0095737D /* NSTimer+operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+operation.h"; sourceTree = "<group>"; };
+		F271DB121D23A69D0095737D /* NSTimer+operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+operation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +113,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F20848C01D28F04200C6C299 /* TAPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				F20848C11D28F04200C6C299 /* TAAbstractDotView.h */,
+				F20848C21D28F04200C6C299 /* TAAbstractDotView.m */,
+				F20848C31D28F04200C6C299 /* TAAnimatedDotView.h */,
+				F20848C41D28F04200C6C299 /* TAAnimatedDotView.m */,
+				F20848C51D28F04200C6C299 /* TADotView.h */,
+				F20848C61D28F04200C6C299 /* TADotView.m */,
+				F20848C71D28F04200C6C299 /* TAPageControl.h */,
+				F20848C81D28F04200C6C299 /* TAPageControl.m */,
+			);
+			path = TAPageControl;
+			sourceTree = "<group>";
+		};
 		F271DABE1D2259790095737D = {
 			isa = PBXGroup;
 			children = (
@@ -105,10 +155,17 @@
 				F271DACE1D2259790095737D /* AppDelegate.m */,
 				F271DAD01D2259790095737D /* ViewController.h */,
 				F271DAD11D2259790095737D /* ViewController.m */,
+				F271DAFD1D2262760095737D /* DRImgCollectionView */,
 				F271DAD31D2259790095737D /* Main.storyboard */,
 				F271DAD61D22597A0095737D /* Assets.xcassets */,
 				F271DAD81D22597A0095737D /* LaunchScreen.storyboard */,
 				F271DADB1D22597A0095737D /* Info.plist */,
+				F271DB041D2267B00095737D /* image0.png */,
+				F271DB051D2267B00095737D /* image1.png */,
+				F271DB061D2267B00095737D /* image2.png */,
+				F271DB071D2267B00095737D /* image3.png */,
+				F20848CF1D291A3300C6C299 /* currentDotImg.png */,
+				F20848D01D291A3300C6C299 /* normalDotImg.png */,
 				F271DACA1D2259790095737D /* Supporting Files */,
 			);
 			path = DRImgCollectionView;
@@ -138,6 +195,21 @@
 				F271DAF11D22597A0095737D /* Info.plist */,
 			);
 			path = DRImgCollectionViewUITests;
+			sourceTree = "<group>";
+		};
+		F271DAFD1D2262760095737D /* DRImgCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F271DB011D2267010095737D /* DRImgCollectionView.h */,
+				F271DB021D2267010095737D /* DRImgCollectionView.m */,
+				F271DB111D23A69D0095737D /* NSTimer+operation.h */,
+				F271DB121D23A69D0095737D /* NSTimer+operation.m */,
+				F271DB0C1D2284F70095737D /* DRImgCollectionViewCell.h */,
+				F271DB0D1D2284F70095737D /* DRImgCollectionViewCell.m */,
+				F271DB0E1D2284F70095737D /* DRImgCollectionViewCell.xib */,
+				F20848C01D28F04200C6C299 /* TAPageControl */,
+			);
+			path = DRImgCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +279,7 @@
 				TargetAttributes = {
 					F271DAC61D2259790095737D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = X342LX7QRW;
 					};
 					F271DADF1D22597A0095737D = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -243,8 +316,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F271DB081D2267B00095737D /* image0.png in Resources */,
+				F20848D11D291A3300C6C299 /* currentDotImg.png in Resources */,
+				F271DB091D2267B00095737D /* image1.png in Resources */,
+				F271DB0A1D2267B00095737D /* image2.png in Resources */,
 				F271DADA1D22597A0095737D /* LaunchScreen.storyboard in Resources */,
 				F271DAD71D22597A0095737D /* Assets.xcassets in Resources */,
+				F271DB0B1D2267B00095737D /* image3.png in Resources */,
+				F271DB101D2284F70095737D /* DRImgCollectionViewCell.xib in Resources */,
+				F20848D21D291A3300C6C299 /* normalDotImg.png in Resources */,
 				F271DAD51D2259790095737D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,8 +351,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F271DAD21D2259790095737D /* ViewController.m in Sources */,
+				F20848C91D28F04200C6C299 /* TAAbstractDotView.m in Sources */,
 				F271DACF1D2259790095737D /* AppDelegate.m in Sources */,
+				F271DB031D2267010095737D /* DRImgCollectionView.m in Sources */,
 				F271DACC1D2259790095737D /* main.m in Sources */,
+				F20848CC1D28F04200C6C299 /* TAPageControl.m in Sources */,
+				F271DB131D23A69D0095737D /* NSTimer+operation.m in Sources */,
+				F271DB0F1D2284F70095737D /* DRImgCollectionViewCell.m in Sources */,
+				F20848CA1D28F04200C6C299 /* TAAnimatedDotView.m in Sources */,
+				F20848CB1D28F04200C6C299 /* TADotView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,10 +502,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DRImgCollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideabinder.DRImgCollectionView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ideabinder.DRImgScrollerView1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,10 +516,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DRImgCollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideabinder.DRImgCollectionView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ideabinder.DRImgScrollerView1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +591,7 @@
 				F271DAF61D22597A0095737D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F271DAF71D22597A0095737D /* Build configuration list for PBXNativeTarget "DRImgCollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +600,7 @@
 				F271DAF91D22597A0095737D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F271DAFA1D22597A0095737D /* Build configuration list for PBXNativeTarget "DRImgCollectionViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +609,7 @@
 				F271DAFC1D22597A0095737D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

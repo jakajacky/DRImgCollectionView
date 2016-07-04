@@ -152,9 +152,7 @@
                       currentDotImage:(UIImage *)currentDotImage
                       backgroundColor:(UIColor *)backgroundColor {
     _direction              = direction;
-//    _dotSize                = CGSizeMake(radius, radius);
     _pageControlLocation    = location;
-//    _dotColor               = centerColor;
     _dotImage               = dotImage ;
     _currentDotImage        = currentDotImage;
     _backgroundColor        = backgroundColor;

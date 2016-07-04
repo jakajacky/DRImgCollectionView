@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint DRImgCollectionView.podspec' to ensure this is a
+#  Be sure to run `pod spec lint DRSAlertDialog.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "DRImgCollectionView"
   s.version      = "0.0.1"
-  s.summary      = "A short description of DRImgCollectionView."
+  s.summary      = "无限轮播."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -88,8 +88,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "DRImgCollectionView/DRImgCollectionView", "DRImgCollectionView/DRImgCollectionView/**/*.{h,m,xib}"
-  
+  s.source_files  = "s.source_files  = "DRImgCollectionView/DRImgCollectionView", "DRImgCollectionView/DRImgCollectionView/**/*.{h,m,xib}"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -103,8 +102,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
-
+  #s.resource_bundles = {'DRSAlertDialog' => ['DRSAlertDialog/Resources/*.png']}
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
@@ -130,6 +128,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "TAPageControl"
+  # s.dependency "JSONKit", "~> 1.4"
 
 end
+

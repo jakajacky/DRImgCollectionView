@@ -17,10 +17,14 @@
 @implementation DRImgCollectionViewCell
 
 
-
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        _imgView = [[UIImageView alloc] initWithFrame:self.bounds];
+        _imgView.backgroundColor = [UIColor cyanColor];
+        [self.contentView addSubview:self.imgView];
+    }
+    return self;
 }
 
 @end

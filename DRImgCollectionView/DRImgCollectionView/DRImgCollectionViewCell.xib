@@ -27,7 +27,7 @@
             </constraints>
             <size key="customSize" width="438" height="163"/>
             <connections>
-                <outlet property="imgView" destination="ULd-tk-NvL" id="sPB-VK-kfu"/>
+                <outlet property="imgView" destination="ULd-tk-NvL" id="IBa-hF-ZUs"/>
             </connections>
             <point key="canvasLocation" x="541.5" y="261"/>
         </collectionViewCell>

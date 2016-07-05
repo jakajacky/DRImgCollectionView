@@ -65,9 +65,10 @@
         [self addSubview:_imgViews];
 
         // 注册
-        [_imgViews registerNib:[UINib nibWithNibName:@"DRImgCollectionViewCell"
-                                              bundle:[NSBundle mainBundle]]
-    forCellWithReuseIdentifier:@"img"];
+//        [_imgViews registerNib:[UINib nibWithNibName:@"DRImgCollectionViewCell"
+//                                              bundle:[NSBundle mainBundle]]
+//    forCellWithReuseIdentifier:@"img"];
+        [_imgViews registerClass:[DRImgCollectionViewCell class] forCellWithReuseIdentifier:@"img"];
         
         // 初始位置在中间
         [_imgViews scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:400 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:false];
@@ -178,9 +179,9 @@
 - (DRImgCollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     DRImgCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"img" forIndexPath:indexPath];
-
-    cell.imgView.image = [UIImage imageNamed:[NSString stringWithFormat:@"image%lu", indexPath.row % _imgArray.count]]; // 循环取图，最后一张是 image0
-    
+    cell.imgView.image = nil;
+//    NSLog(@"+++%@", cell);
+    cell.imgView.image = [UIImage imageNamed:[NSString stringWithFormat:@"image%u", indexPath.item % _imgArray.count]]; // 循环取图，最后一张是 image0
     
     return cell;
     
@@ -232,7 +233,7 @@
 - (void)run {
     DRImgCollectionViewCell *cell = _imgViews.visibleCells[0];
     NSIndexPath *index = [_imgViews indexPathForCell:cell];
-    NSLog(@"%ld", index.item);
+//    NSLog(@"%ld", index.item);
     
     NSInteger currentPage = (index.item + 1) % 4;
     

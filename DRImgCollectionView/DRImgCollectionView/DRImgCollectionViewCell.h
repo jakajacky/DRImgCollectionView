@@ -10,6 +10,6 @@
 
 @interface DRImgCollectionViewCell : UICollectionViewCell
 
-@property (strong, nonatomic) IBOutlet UIImageView *imgView;
+@property (strong, nonatomic) UIImageView *imgView;
 
 @end

@@ -27,7 +27,6 @@
 		F271DB0A1D2267B00095737D /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = F271DB061D2267B00095737D /* image2.png */; };
 		F271DB0B1D2267B00095737D /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = F271DB071D2267B00095737D /* image3.png */; };
 		F271DB0F1D2284F70095737D /* DRImgCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F271DB0D1D2284F70095737D /* DRImgCollectionViewCell.m */; };
-		F271DB101D2284F70095737D /* DRImgCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F271DB0E1D2284F70095737D /* DRImgCollectionViewCell.xib */; };
 		F271DB131D23A69D0095737D /* NSTimer+operation.m in Sources */ = {isa = PBXBuildFile; fileRef = F271DB121D23A69D0095737D /* NSTimer+operation.m */; };
 /* End PBXBuildFile section */
 
@@ -83,7 +82,6 @@
 		F271DB071D2267B00095737D /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
 		F271DB0C1D2284F70095737D /* DRImgCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRImgCollectionViewCell.h; sourceTree = "<group>"; };
 		F271DB0D1D2284F70095737D /* DRImgCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRImgCollectionViewCell.m; sourceTree = "<group>"; };
-		F271DB0E1D2284F70095737D /* DRImgCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DRImgCollectionViewCell.xib; sourceTree = "<group>"; };
 		F271DB111D23A69D0095737D /* NSTimer+operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+operation.h"; sourceTree = "<group>"; };
 		F271DB121D23A69D0095737D /* NSTimer+operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+operation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -206,7 +204,6 @@
 				F271DB121D23A69D0095737D /* NSTimer+operation.m */,
 				F271DB0C1D2284F70095737D /* DRImgCollectionViewCell.h */,
 				F271DB0D1D2284F70095737D /* DRImgCollectionViewCell.m */,
-				F271DB0E1D2284F70095737D /* DRImgCollectionViewCell.xib */,
 				F20848C01D28F04200C6C299 /* TAPageControl */,
 			);
 			path = DRImgCollectionView;
@@ -323,7 +320,6 @@
 				F271DADA1D22597A0095737D /* LaunchScreen.storyboard in Resources */,
 				F271DAD71D22597A0095737D /* Assets.xcassets in Resources */,
 				F271DB0B1D2267B00095737D /* image3.png in Resources */,
-				F271DB101D2284F70095737D /* DRImgCollectionViewCell.xib in Resources */,
 				F20848D21D291A3300C6C299 /* normalDotImg.png in Resources */,
 				F271DAD51D2259790095737D /* Main.storyboard in Resources */,
 			);

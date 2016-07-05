@@ -13,6 +13,7 @@
 
 #define kWidth  _imgViews.frame.size.width
 #define kHeight _imgViews.frame.size.height
+#define kMiddleIndex ((_imgArray.count) * (100))
 
 @interface DRImgCollectionView ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 {
@@ -47,8 +48,8 @@
         _imgArray = [NSMutableArray arrayWithArray:array];
         
         // normal attributes
-        _dotColor               = dotColor;
-        _dotSize                = CGSizeMake(radius, radius);
+        _dotColor = dotColor;
+        _dotSize  = CGSizeMake(radius, radius);
         
         // layout
         _layout = [[UICollectionViewFlowLayout alloc] init];
@@ -65,13 +66,12 @@
         [self addSubview:_imgViews];
 
         // 注册
-//        [_imgViews registerNib:[UINib nibWithNibName:@"DRImgCollectionViewCell"
-//                                              bundle:[NSBundle mainBundle]]
-//    forCellWithReuseIdentifier:@"img"];
         [_imgViews registerClass:[DRImgCollectionViewCell class] forCellWithReuseIdentifier:@"img"];
         
         // 初始位置在中间
-        [_imgViews scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:400 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:false];
+        [_imgViews scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:kMiddleIndex inSection:0]
+                          atScrollPosition:UICollectionViewScrollPositionNone
+                                  animated:false];
         
         // 分页指示器
         [self initPageControl];
@@ -181,7 +181,7 @@
     DRImgCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"img" forIndexPath:indexPath];
     cell.imgView.image = nil;
 //    NSLog(@"+++%@", cell);
-    cell.imgView.image = [UIImage imageNamed:[NSString stringWithFormat:@"image%u", indexPath.item % _imgArray.count]]; // 循环取图，最后一张是 image0
+    cell.imgView.image = [UIImage imageNamed:[NSString stringWithFormat:@"image%lu", indexPath.item % _imgArray.count]]; // 循环取图，最后一张是 image0
     
     return cell;
     
@@ -196,19 +196,22 @@
     DRImgCollectionViewCell *cell = _imgViews.visibleCells[0];
     NSIndexPath *index = [_imgViews indexPathForCell:cell];
     
-    NSInteger currentPage = index.item % 4;
+    NSInteger currentPage = index.item % _imgArray.count;
     if (currentPage == 0) {
-        [_imgViews scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:400 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:false];
+        [_imgViews scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:kMiddleIndex inSection:0]
+                          atScrollPosition:UICollectionViewScrollPositionNone
+                                  animated:false];
     }
     
     // 如果巧了，滚动停止时，没有一次位于首页，那么到最后一组的时候，将collectionView重置为中间位置
-    if (index.item == _imgArray.count * 200 - 4) {
-        [_imgViews scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:400 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:false];
+    if (index.item == _imgArray.count * 200 - _imgArray.count) {
+        [_imgViews scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:kMiddleIndex inSection:0]
+                          atScrollPosition:UICollectionViewScrollPositionNone
+                                  animated:false];
     }
     
     // pageController
     _pageView.currentPage = currentPage;
-    
     
     // 拖拽结束，collectionView停止下来2秒后_timer继续
     [self performSelector:@selector(delay) withObject:nil afterDelay:2];
@@ -234,16 +237,17 @@
     DRImgCollectionViewCell *cell = _imgViews.visibleCells[0];
     NSIndexPath *index = [_imgViews indexPathForCell:cell];
 //    NSLog(@"%ld", index.item);
-    
-    NSInteger currentPage = (index.item + 1) % 4;
-    
+    NSInteger currentPage = (index.item + 1) % _imgArray.count;
     if (index.item + 1 <= _imgArray.count * 200) { // 非collectionView的边界
 
-        [_imgViews scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:index.item + 1 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:true];
+        [_imgViews scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:index.item + 1 inSection:0]
+                          atScrollPosition:UICollectionViewScrollPositionNone
+                                  animated:true];
     }
     else { // collectionView到达尽头的最后一张，也就是image0，切换回 中间位置，继续显示image0，这样有个问题就是最后一张得image0显示的时间变为4s
-        
-        [_imgViews scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:400 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:false];
+        [_imgViews scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:kMiddleIndex inSection:0]
+                          atScrollPosition:UICollectionViewScrollPositionNone
+                                  animated:false];
         
     }
     

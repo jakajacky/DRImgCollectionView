@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DRImgCollectionView"
-  s.version      = "0.0.2"
+  s.version      = "1.0.0"
   s.summary      = "无限轮播."
 
   s.homepage     = "https://github.com/jakajacky/DRImgCollectionView"

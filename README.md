@@ -6,7 +6,7 @@
 方式1、
 使用cocoapods
       
-      pod 'DRImgCollectionView', '~> 0.0.2'
+      pod 'DRImgCollectionView', '~> 1.0.0'
       
 在自己的项目中 
        
